@@ -1,0 +1,34 @@
+[project]
+name = "hkdiv"
+version = "0.1.0"
+description = "Mean-variance analysis vs. naive (1/N) diversification on Hong Kong equities"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "jupyterlab",
+    "ipykernel",
+    "nbstripout>=0.9.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hkdiv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

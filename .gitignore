@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Licensed Bloomberg data: must never be committed.
+# Keep folders, ignore all contents.
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# Safety net: data files anywhere in the repo (e.g. exports saved in notebooks/)
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.pickle
+*.feather
+*.h5
+*.hdf5
