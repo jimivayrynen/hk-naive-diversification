@@ -36,4 +36,5 @@ report/*.fdb_latexmk
 report/*.fls
 report/*.log
 report/*.out
-docs/
+docs/*
+!docs/tickers.md
